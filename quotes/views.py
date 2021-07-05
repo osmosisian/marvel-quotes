@@ -30,7 +30,7 @@ def index(request):
     return HttpResponse(response_data) 
   
 
-def monthly_challange_by_number(request,quote):
+def quotes_by_number(request,quote):
     quotes = list(quotes_and_actors.keys())
     if quote > len(quotes):
         return HttpResponseNotFound("<h1>invalid character</h1>")
@@ -38,7 +38,7 @@ def monthly_challange_by_number(request,quote):
     redirect_path = reverse("quotes",args=[redirect_quote]) # challange/redirect_month
     return HttpResponseRedirect(redirect_path)
 
-def monthly_challange(request,character):
+def quotes_display(request,character):
     try:
         challange_text = quotes_and_actors[character]
         response_data = f"<h1>{challange_text}</h1>"
