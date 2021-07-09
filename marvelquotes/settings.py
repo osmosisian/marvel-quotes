@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'monthly_challanges.urls'
+ROOT_URLCONF = 'marvelquotes.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'monthly_challanges.wsgi.application'
+WSGI_APPLICATION = 'marvelquotes.wsgi.application'
 
 
 # Database
